@@ -1,6 +1,7 @@
 # Example of Machine Learning Model Deployment with Flask and Docker
 
 This repository contains a simple example of deploying a Machine Learning model via a Flask REST API, containerized with Docker.
+
 The model used for this example is trained for binary classification of breast cancer diagnosis.
 
 ## Prerequisites
