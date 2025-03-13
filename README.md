@@ -6,7 +6,6 @@ The model used for this example is trained for binary classification of breast c
 ## Prerequisites
 
 *   Docker installed on your machine.
-*   Python 3.
 
 ## Instructions
 
