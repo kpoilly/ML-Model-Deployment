@@ -13,8 +13,8 @@ down:
 	docker stop model_deployment
 	docker remove model_deployment
 
-clean:
-	docker system prune -af
+# clean:
+# 	docker system prune -af
 
 .PHONY:
 	all re down clean
