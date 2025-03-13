@@ -12,21 +12,21 @@ The model used for this example is trained for binary classification of breast c
 
 **1.	You can simply build and run the Docker container with:**
 
-    ```bash
+    ```
     make
     ```
 
 
    **To Down the docker container:**
    
-    ```bash
+    ```
     make down 
     ```
 
 
    **To Up it again:**
    
-    ```bash
+    ```
     make up
     ```
 
@@ -36,7 +36,7 @@ The model used for this example is trained for binary classification of breast c
    You can use `curl` or a tool like Postman to send a POST request to the API. For example:
 
 
-    ```bash
+    ```
     curl -X POST -H "Content-Type: application/json" -d '{'features'}' http://localhost:5000/predict
     ```
 
@@ -46,7 +46,7 @@ The model used for this example is trained for binary classification of breast c
 
    for example:
    
-	```bash
+	```
 	curl -X POST -H "Content-Type: application/json" -d '{
     "radius_mean": 11.85, "texture_mean": 17.46, "perimeter_mean": 75.54, "area_mean": 432.7, "smoothness_mean": 0.08372, "compactness_mean": 0.05642, "concavity_mean": 0.02688, "concave_points_mean": 0.0228, "symmetry_mean": 0.1875, "fractal_dimension_mean": 0.05715,
     "radius_SE": 0.207, "texture_SE": 1.238, "perimeter_SE": 1.234, "area_SE": 13.88, "smoothness_SE": 0.007595, "compactness_SE": 0.015, "concavity_SE": 0.01412, "concave_points_SE": 0.008578, "symmetry_SE": 0.01792, "fractal_dimension_SE": 0.001784,
@@ -58,7 +58,7 @@ The model used for this example is trained for binary classification of breast c
    
    While
    
-		```bash
+		```
 	curl -X POST -H "Content-Type: application/json" -d '{
     "radius_mean": 20.16, "texture_mean": 19.66, "perimeter_mean": 131.1, "area_mean": 1274, "smoothness_mean": 0.0802, "compactness_mean": 0.08564, "concavity_mean": 0.1155, "concave_points_mean": 0.07726, "symmetry_mean": 0.1928, "fractal_dimension_mean": 0.05096,
     "radius_SE": 0.5925, "texture_SE": 0.6863, "perimeter_SE": 3.868, "area_SE": 74.85, "smoothness_SE": 0.004536, "compactness_SE": 0.01376, "concavity_SE": 0.02645, "concave_points_SE": 0.01247, "symmetry_SE": 0.02193, "fractal_dimension_SE": 0.001589,
