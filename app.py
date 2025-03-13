@@ -25,8 +25,8 @@ def predict():
         features = np.array(features_list).reshape(1, -1)
         prediction = model.predict(features).tolist()[0]
         prediction_dict = {
-            "Benign": prediction[0],
-            "Malignant": prediction[1]
+            "Benign": round(prediction[0], 5),
+            "Malignant": round(prediction[1], 5)
         }
         return jsonify({'prediction': prediction_dict})
     except Exception as e:
