@@ -11,30 +11,41 @@ The model used for this example is trained for binary classification of breast c
 ## Instructions
 
 **1.	You can simply build and run the Docker container with:**
+
     ```bash
     make
     ```
 
+
    **To Down the docker container:**
+   
     ```bash
     make down 
     ```
 
+
    **To Up it again:**
+   
     ```bash
     make up
     ```
 
+
 **2.	Test the API:**
-    You can use `curl` or a tool like Postman to send a POST request to the API. For example:
+
+   You can use `curl` or a tool like Postman to send a POST request to the API. For example:
+
 
     ```bash
     curl -X POST -H "Content-Type: application/json" -d '{'features'}' http://localhost:5000/predict
     ```
 
-    The JSON response will contain the model's prediction (with a probability for each class).
 
-	for example:
+   The JSON response will contain the model's prediction (with a probability for each class).
+
+
+   for example:
+   
 	```bash
 	curl -X POST -H "Content-Type: application/json" -d '{
     "radius_mean": 11.85, "texture_mean": 17.46, "perimeter_mean": 75.54, "area_mean": 432.7, "smoothness_mean": 0.08372, "compactness_mean": 0.05642, "concavity_mean": 0.02688, "concave_points_mean": 0.0228, "symmetry_mean": 0.1875, "fractal_dimension_mean": 0.05715,
@@ -42,8 +53,11 @@ The model used for this example is trained for binary classification of breast c
     "radius_worst": 13.06, "texture_worst": 25.75, "perimeter_worst": 84.35, "area_worst": 517.8, "smoothness_worst": 0.1369, "compactness_worst": 0.1758, "concavity_worst": 0.1316, "concave_points_worst": 0.0914, "symmetry_worst": 0.3101, "fractal_dimension_worst": 0.07007
 	}' http://localhost:5000/predict
 	```
-	should give you a high probability of being benign.
-	while
+ 
+   Should give you a high probability of being benign.
+   
+   While
+   
 		```bash
 	curl -X POST -H "Content-Type: application/json" -d '{
     "radius_mean": 20.16, "texture_mean": 19.66, "perimeter_mean": 131.1, "area_mean": 1274, "smoothness_mean": 0.0802, "compactness_mean": 0.08564, "concavity_mean": 0.1155, "concave_points_mean": 0.07726, "symmetry_mean": 0.1928, "fractal_dimension_mean": 0.05096,
@@ -51,7 +65,8 @@ The model used for this example is trained for binary classification of breast c
     "radius_worst": 23.06, "texture_worst": 23.03, "perimeter_worst": 150.2, "area_worst": 1657, "smoothness_worst": 0.1054, "compactness_worst": 0.1537, "concavity_worst": 0.2606, "concave_points_worst": 0.1425, "symmetry_worst": 0.3055, "fractal_dimension_worst": 0.05933
 	}' http://localhost:5000/predict
 	```
-	should give you the opposite.
+ 
+   Should give you the opposite.
 
 ## Files
 
