@@ -10,22 +10,22 @@ The model used for this example is trained for binary classification of breast c
 
 ## Instructions
 
-1.	**You can simply build and run the Docker container with:**
+**1.	You can simply build and run the Docker container with:**
     ```bash
     make
     ```
 
-**To Down the docker container:**
+   **To Down the docker container:**
     ```bash
     make down 
     ```
 
-**To Up it again:**
+   **To Up it again:**
     ```bash
     make up
     ```
 
-2.  **Test the API:**
+**2.	Test the API:**
     You can use `curl` or a tool like Postman to send a POST request to the API. For example:
 
     ```bash
