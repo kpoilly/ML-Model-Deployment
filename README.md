@@ -73,6 +73,7 @@ The model used for this example is trained for binary classification of breast c
 *   `app.py`: Flask API application code.
 *   `model/model.pth`: Pre-trained pytorch model.
 *   `model/scaler.pkl`: Fitted standard scaler .
+*   `model/models.py`: Model's class .
 *   `Dockerfile`: Dockerfile to build the Docker image.
 *   `requirements.txt`: List of Python dependencies.
 *   `README.md`: This file.
