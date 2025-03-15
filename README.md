@@ -74,6 +74,15 @@ The model used for this example is trained for binary classification of breast c
  
    Should give you the opposite.
 
+**2.	Output:**
+
+   The API will give you a probability for each class (Benign or Malignant) in a JSON dictionnary fromated like this:
+
+    {
+            "Benign": probability,
+            "Malignant": probability
+    }
+
 ## Files
 
 *   `app.py`: Flask API application code.
