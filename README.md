@@ -95,7 +95,7 @@ The model used for this example is trained for binary classification of breast c
 
 ## Notes
 
-* The model used in this example is one of the previous model I worked on, you can find it own repo [here](https://github.com/kpoilly/Multilayer-Perceptron).
+* The model used in this example is one of the previous model I worked on, you can find its own repo [here](https://github.com/kpoilly/Multilayer-Perceptron).
 * I trained it and optimized it to achieve 99% of accuracy with the dataset that can be found in its repo.
 * This example is simplified to illustrate the concept of deployment. In a real-world context, more robustness should be added (error handling, data validation, security, monitoring, etc.).
 * In a real-world context, you would typically deploy this Docker image to a cloud platform like AWS, Google Cloud, or Azure to make your API accessible online.
